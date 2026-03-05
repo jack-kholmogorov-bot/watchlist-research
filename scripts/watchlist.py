@@ -11,12 +11,6 @@ Commands:
 """
 import sys
 import os
-
-# Add script directory to path for imports
-script_dir = os.path.dirname(os.path.abspath(__file__))
-if script_dir not in sys.path:
-    sys.path.insert(0, script_dir)
-
 import sqlite3
 from datetime import datetime, timedelta
 from research_engine import ResearchEngine
